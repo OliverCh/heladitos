@@ -1,0 +1,189 @@
+html, body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+:root{
+  --naranja: #ff8400;
+  --morado: #6d3db2;
+  --amarillo: #ffc000;
+  --blanco:#fff;
+}
+.nav_top {
+    background-color: var(--naranja);
+    position: fixed;
+    top:0;
+    display: flex;
+    width: 100%;
+    z-index: 3;
+    height: 50px;
+}
+.nav_top > figure{
+  width: 30%;
+  padding-left: 30px;
+  margin: 0;
+  position: relative;
+}
+.nav_top > figure > img{
+  height: 20px;
+  margin-top: 15px;
+}
+.nav_top > ul{
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  list-style: none;
+  width: 80%;
+  text-align: right;
+}
+.nav_top > ul > li{
+  display: inline-block;
+  margin-right: 30px;
+}
+.nav_top > ul > li > a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+/* Seccion de Home */
+.home_section {
+    background-image:url('../imagenes/home_back.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.home_relative{
+    background-color: #bc601d99;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    color:var(--blanco);
+}
+.home_absolute {
+    position: absolute;
+    margin: auto;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.home_title{
+    font-family: 'Fredoka One', cursive;
+    line-height: .6;
+    letter-spacing: 2px;
+}
+.home_title > h1{
+  color: var(--amarillo);
+  margin: 0;
+  font-size: 4em;
+}
+.home_title > h2{
+  font-size: 3em;
+  margin: 0;
+}
+.home_parrafo{
+  margin-top: 40px;
+}
+.home_parrafo {
+    margin: 40px 0;
+    font-size: 1.2em;
+}
+.call_to_action{
+  border:none;
+  background-color: var(--morado);
+  color: var(--blanco);
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 2px;
+  font-size: 1.1em;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.call_to_action:hover{
+  background-color:var(--naranja);
+  transition: all 0.5s ease-out;
+}
+/* Sección de Nosotros */
+.nosotros_section {
+    display: flex;
+    height: 600px;
+}
+.col-6 {
+    width: 50%;
+}
+.nosotros_background{
+  background-image: url('../imagenes/nosotros_back.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.helado_volador {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    left: -15%;
+}
+.helado_volador:hover{
+  left:-18%;
+transition: all 0.5s ease-out;
+}
+.nosotros_info{
+  width: 60%;
+  padding-top: 40px;
+  margin-left: 10%;
+}
+.nosotros_info h1 {
+    font-family: 'Fredoka One', cursive;
+    color: var(--naranja);
+    font-size: 3em;
+}
+.nosotros_info p{
+    color:var(--morado);
+    font-weight: 300;
+}
+.nosotros_info {
+  margin-top: 30px;
+}
+/* footer */
+footer{
+  background-color: var(--naranja);
+  color: #fff;
+  display: flex;
+}
+.col-4{
+  width: 33.3%;
+  text-align: center;
+}
+.logo_footer{
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.logo_footer > img {
+  width: 100px;
+  position: absolute;
+  margin: auto;
+  top:0;
+  bottom:0;
+  right: 0;
+  left:0;
+}
+.redes_sociales{
+  padding-top: 15px;
+}
+.redes_sociales > a{
+  color:#fff;
+  text-decoration: none;
+}
+.redes_sociales > a > i {
+  font-size: 1.5em;
+  margin: 0 5px;
+}
